@@ -1,7 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+
 .title {
+    font-family: 'Goldman', cursive;
     text-align: center;
     font-size: 3rem;
-    text-shadow:0 0 10px #fff,0 0 20px #fff,0 0 30px#e60073,0 0 40px#e60073,
-  0 0 50px#e60073,0 0 60px#e60073,0 0 70px#e60073;
+    color: rgb(86, 118, 235);
+    text-shadow:0 0 10px rgb(0, 0, 0),0 0 20px #000000,0 0 30px #000000,0 0 40px #000000,
+  0 0 50px rgba(34,194,195,1),0 0 60px rgba(34,194,195,1),0 0 70px rgba(34,194,195,1);
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  background: radial-gradient(circle, rgba(34,194,195,1) 14%, rgba(45,77,253,1) 100%);
+}
+
+a {
+  height: 110px;
+}

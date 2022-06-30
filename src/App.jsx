@@ -10,9 +10,9 @@ import { MovieDetails } from "./pages/MovieDetails";
 export function App(){
     return (
     <Router>
-        <header>
+        <header className={styles.header}>
             <Link to="/">
-            <h1 className={styles.title}>Movies</h1>
+            <h1 className={styles.title}>Challenge React</h1>
             </Link>
         </header>
         <main>

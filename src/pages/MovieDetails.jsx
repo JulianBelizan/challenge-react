@@ -1,21 +1,32 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Loading } from '../components/Loading';
 import { get } from '../utils/httpClient';
 import styles from './MovieDetails.module.css';
 
 export function MovieDetails() {
     const { movieId } = useParams();
+    const [isLoading, setIsLoading] = useState(true);
     const [movie, setMovie] = useState(null);
 
 useEffect(() => {
+    setIsLoading(true);
+
     get("/movie/" + movieId).then(data => {
+        setIsLoading(false);
         setMovie(data);
     })
 }, [movieId]);
 
+if (isLoading) {
+    return <Loading />
+}
+
 if (!movie) {
     return null;
 };
+
+
 
     const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
     return <div className={styles.detailsContainer}>

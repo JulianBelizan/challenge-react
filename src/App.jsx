@@ -12,7 +12,7 @@ export function App(){
     <Router>
         <header className={styles.header}>
             <Link to="/">
-            <h1 className={styles.title}>Challenge React</h1>
+            <h1 className={styles.title}>Movie Index</h1>
             </Link>
         </header>
         <main>

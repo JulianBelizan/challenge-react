@@ -1,7 +1,7 @@
 .searchContainer {
     display: flex;
     justify-content: center;
-    background: radial-gradient(circle, rgba(34,194,195,1) 14%, rgba(45,77,253,1) 100%);
+    background: linear-gradient(90deg, rgba(19,20,42,1) 0%, rgba(22,43,78,1) 48%, rgba(19,20,42,1) 100%);
 }
 
 .searchBox {
@@ -10,11 +10,20 @@
 }
 
 .searchInput {
-    width: 1360px;
+    width: 1250px;
     background: rgba(253, 253, 253, 0.7);
     height: 25px;
     border-radius: 15px;
     padding: 5px 20px 5px 10px;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    
+}
+
+.searchInput:focus {
+    outline: none;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
 }
 
 .searchButton {
@@ -27,7 +36,7 @@
     background: none;
 }
 
-@media (max-width: 1400px){
+@media (max-width: 1300px){
     .searchContainer{
         display: flex;
         justify-content: center;

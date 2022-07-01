@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/univia-pro?styles=28106%27');
+
 
 .title {
-    font-family: 'Goldman', cursive;
+    font-family: 'Univia Pro', sans-serif;
     text-align: center;
     font-size: 3rem;
-    color: rgb(86, 118, 235);
-    text-shadow:0 0 10px rgb(0, 0, 0),0 0 20px #000000,0 0 30px #000000,0 0 40px #000000,
-  0 0 50px rgba(34,194,195,1),0 0 60px rgba(34,194,195,1),0 0 70px rgba(34,194,195,1);
+    color: #afc2c1;
+    text-shadow:0 7px 30px rgb(0, 0, 0),0 5px 3px #000000,0 5px 3px #000000,0 10px 15px #000000;
 }
 
 .header {
   display: flex;
   justify-content: center;
   height: 150px;
-  background: radial-gradient(circle, rgba(34,194,195,1) 14%, rgba(45,77,253,1) 100%);
+  background: linear-gradient(90deg, rgba(19,20,42,1) 0%, rgba(22,43,78,1) 48%, rgba(19,20,42,1) 100%);
 }
 
 a {

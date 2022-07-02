@@ -5,9 +5,10 @@
 .title {
     font-family: 'Univia Pro', sans-serif;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #afc2c1;
     text-shadow:0 7px 30px rgb(0, 0, 0),0 5px 3px #000000,0 5px 3px #000000,0 10px 15px #000000;
+    padding: auto;
 }
 
 .header {
@@ -15,6 +16,7 @@
   justify-content: center;
   height: 150px;
   background: linear-gradient(90deg, rgba(19,20,42,1) 0%, rgba(22,43,78,1) 48%, rgba(19,20,42,1) 100%);
+  
 }
 
 a {

@@ -1,21 +1,24 @@
 import styles from "./MovieCard.module.css";
 import React from 'react';
 import { Link } from "react-router-dom";
+import { getMovieImg } from "../utils/getMovieImg";
 
 export function MovieCard({movie}) {
-    console.log(styles)
-    const imageUrl = "https://image.tmdb.org/t/p/w300" + movie.poster_path;
+    const imageUrl = getMovieImg(movie.poster_path, 300);
     return (
+   
         <li className={styles.movieCard}>
         <Link to={"/movies/" + movie.id}>
-            <img 
-                width={230}
-                height={345}
+             <div className={styles.containerCard}>
+                <img 
+                width={150}
+                height={250}
                 src={imageUrl} 
                 alt={movie.title} 
                 className={styles.movieImage}
             />
-            <div>{movie.title}</div>
+            <div>{movie.title} {movie.vote_average}</div>
+            </div>
         </Link>
         </li>
         );

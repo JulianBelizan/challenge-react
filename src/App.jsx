@@ -17,8 +17,12 @@ export function App(){
         </header>
         <main>
             <Switch>
-                <Route exact path="/movies/:movieId"><MovieDetails /></Route>
-                <Route path="/"><LandingPage /></Route>
+                <Route exact path="/movies/:movieId">
+                    <MovieDetails />
+                </Route>
+                <Route path="/">
+                    <LandingPage />
+                </Route>
             </Switch>
         </main>
     </Router>

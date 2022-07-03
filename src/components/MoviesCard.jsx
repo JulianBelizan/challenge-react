@@ -4,6 +4,17 @@ import { Link } from "react-router-dom";
 import { getMovieImg } from "../utils/getMovieImg";
 
 export function MovieCard({movie}) {
+
+    function setVoteClass(vote) {
+        if (vote >= 8) {
+            return "green";
+        } else if (vote >= 6) {
+            return "orange";
+        } else {
+            return "red";
+        }
+    }
+
     const imageUrl = getMovieImg(movie.poster_path, 300);
     return (
    
@@ -17,7 +28,10 @@ export function MovieCard({movie}) {
                 alt={movie.title} 
                 className={styles.movieImage}
             />
-            <div>{movie.title} {movie.vote_average}</div>
+                <div className= {styles.movieInfo}>
+                    <h3>{movie.title}</h3>
+                    <span className={`tag ${setVoteClass(movie.vote_average)}`}>{movie.vote_average}</span>
+                </div>
             </div>
         </Link>
         </li>
